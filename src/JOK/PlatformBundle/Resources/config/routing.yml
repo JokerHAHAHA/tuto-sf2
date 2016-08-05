@@ -1,0 +1,34 @@
+jok_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: JOKPlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+    
+jok_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: JOKPlatformBundle:Advert:view
+    requirements:
+        page: \d+
+
+jok_platform_add:
+    path:      /add
+    defaults:
+        _controller: JOKPlatformBundle:Advert:add
+
+jok_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: JOKPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+jok_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: JOKPlatformBundle:Advert:delete
+    requirements:
+        id: \d+
+    

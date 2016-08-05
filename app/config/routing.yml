@@ -1,0 +1,3 @@
+jok_platform:
+    resource: "@JOKPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform

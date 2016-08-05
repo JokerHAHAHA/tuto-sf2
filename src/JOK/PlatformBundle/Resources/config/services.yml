@@ -1,0 +1,4 @@
+services:
+#    jok_platform.example:
+#        class: JOK\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
