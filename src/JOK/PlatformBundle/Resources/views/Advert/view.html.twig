@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage de l'annonce {{id}}</title>
+</head>
+<body>
+    <h1>Annonce N°= {{id}}</h1>
+    {% for message in app.session.flashbag.get('info') %}
+        <p>{{message}}</p>
+    {% endfor %}
+</body>
+</html>
